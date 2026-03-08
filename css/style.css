@@ -414,3 +414,47 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 	height: 1100px;
 	border: none;
 }
+
+
+.timeline {
+	position: relative;
+	margin: 60px auto;
+	padding: 20px 0;
+	width: 90%;
+}
+
+	.timeline:before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		width: 3px;
+		height: 100%;
+		background: #ddd;
+		transform: translateX(-50%);
+	}
+
+.timeline-item {
+	width: 50%;
+	padding: 20px 40px;
+	position: relative;
+}
+
+	.timeline-item.left {
+		left: 0;
+		text-align: right;
+	}
+
+	.timeline-item.right {
+		left: 50%;
+	}
+
+.timeline-content {
+	background: white;
+	padding: 25px;
+	border-radius: 6px;
+	box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+	.timeline-content h3 {
+		margin-top: 0;
+	}
