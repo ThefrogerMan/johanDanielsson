@@ -423,15 +423,15 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 	width: 90%;
 }
 
-	.timeline:before {
-		content: '';
-		position: absolute;
-		left: 50%;
-		width: 3px;
-		height: 100%;
-		background: #ddd;
-		transform: translateX(-50%);
-	}
+.timeline:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 3px;
+	height: 100%;
+	background: #ddd;
+	transform: translateX(-50%);
+}
 
 .timeline-item {
 	width: 50%;
