@@ -439,14 +439,14 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 	position: relative;
 }
 
-	.timeline-item.left {
-		left: 0;
-		text-align: right;
-	}
+.timeline-item.left {
+	left: 0;
+	text-align: right;
+}
 
-	.timeline-item.right {
-		left: 50%;
-	}
+.timeline-item-right {
+	left: 50%;
+}
 
 .timeline-content {
 	background: white;
@@ -455,6 +455,6 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 	box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
-	.timeline-content h3 {
-		margin-top: 0;
-	}
+.timeline-content h3 {
+	margin-top: 0;
+}
