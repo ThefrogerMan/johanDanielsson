@@ -1,28 +1,34 @@
 import Hero from "../components/Hero";
 import earlyBird from "../assets/early-bird.png";
+import { projects, type ProjectType } from "../data/data";
+import { Link } from "react-router";
 
 export default function Main() {
   return (
     <div className="">
       <Hero />
       <div className="grid grid-cols-3 gap-3 mt-4">
-        <Project />
-        <Project />
+        {projects.map((project) => {
+          return <Project {...project} />;
+        })}
       </div>
     </div>
   );
 }
 
-function Project() {
+function Project(props: ProjectType) {
   console.log(earlyBird);
   return (
-    <div
-      className="border aspect-square bg-cover"
+    <Link
+      to={"/projects/" + props.id}
+      className="p-2 aspect-square bg-cover text-white"
       style={{
-        backgroundImage: `url(${earlyBird}`,
+        backgroundImage: `url(${props.coverImage}`,
       }}
     >
-      <div>project name</div>
-    </div>
+      <div className="text-white">
+        <div>{props.name}</div>
+      </div>
+    </Link>
   );
 }
