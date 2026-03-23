@@ -1,15 +1,12 @@
-import Hero from "../components/Hero";
 import { projects } from "../data/data";
 import Grid from "../components/Grid";
 import ProjectCard from "../components/ProjectCard";
 
-export default function Main() {
-  const featuredProjects = projects.filter((project) => project.featured);
+export default function Projects() {
   return (
     <div className="">
-      <Hero />
       <Grid>
-        {featuredProjects.map((project) => {
+        {projects.map((project) => {
           return <ProjectCard {...project} />;
         })}
       </Grid>
