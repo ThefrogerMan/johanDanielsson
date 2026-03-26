@@ -53,7 +53,6 @@ export const projects: ProjectType[] = [
   {
     id: "test5",
     name: "Spite: Oathbound",
-    featured: true,
     description: "As a shieldmaiden, slash and strike your way through your draugr-infested hometown, taking on the role of a valkyrie to save the World Tree.",
     myContributions: "Combat, Sound",
     coverImage: spite,
@@ -65,7 +64,6 @@ export const projects: ProjectType[] = [
     featured: true,
     description: "As a wizard who has lost their power, climb and puzzle the way as you scour, beware suits of armor and do not cower, regain the magic and free your tower.",
     myContributions: "Movement, Gameplay Features",
-    featured: true,
     coverImage: lilWiz,
   },
 ];
