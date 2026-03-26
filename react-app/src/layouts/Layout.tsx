@@ -15,7 +15,9 @@ function Header() {
   return (
     <header className="flex justify-between p-3 md:p-6 max-w-4xl mx-auto">
       <div className="text-lg font-bold">
-        <Link to="/">JD</Link>
+        <Link to="/" className="font-extrabold!">
+          JD
+        </Link>
       </div>
       <nav aria-label="Main navigation">
         <ul className="flex justify-between gap-2 list-none!">

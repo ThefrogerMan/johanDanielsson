@@ -5,12 +5,15 @@ export default function ProjectCard(props: ProjectType) {
   return (
     <Link
       to={"/projects/" + props.id}
-      className="p-2 aspect-square bg-cover text-white"
-      style={{
-        backgroundImage: `url(${props.coverImage}`,
-      }}
+      className="relative aspect-video md:aspect-square text-white group overflow-hidden block"
     >
-      <div className="text-white">
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-300 scale-110 group-hover:scale-100"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent), url(${props.coverImage})`,
+        }}
+      />
+      <div className="relative z-10 p-3 text-white group-hover:underline">
         <div>{props.name}</div>
       </div>
     </Link>
