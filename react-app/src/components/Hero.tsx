@@ -10,7 +10,7 @@ export default function Hero() {
       and I'm a
       <span className="text-4xl text-white whitespace-nowrap">
         {" "}
-        Tools Programmer
+        Tools and Gameplay Programmer
       </span>
       .
     </div>

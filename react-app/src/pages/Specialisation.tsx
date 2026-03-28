@@ -19,26 +19,27 @@ export default function Specialisation() {
         </p>
       </Section>
       <Section title="Make it work">
-        <p>
-          <img src={dialogV1} alt={dialogV1.toString()} className="w-full h-auto mb-4" />
-          To work iterativly and early test is something that TGA is pushing and I have learned from previous experiences. 
-          So the first step was just to make a system that can print text in console wit the minimum scope of my project.
-          The minimum I had for the project was to have the ability to go through a dialog tree, with different speed on dialog and
-          if needed options to differnet branches in the dialog tree. A hard coded exemple of the class structure is used to test 
-          input, ease of building the tree and look of the dialog speed. ** Insert ealry gif of dialog tree, rightside**
-        </p>
-
-        <p>
-          The early testing also made it so extra data that previously wasn't considered needed a place to be stored, like the speaker.
-          Once the structure was built and tested with how different dialog would connect it was time to connect it to something visual 
-          to easy the use of building the trees. This was made in a visual scripting tool as to save time and not reinventing the wheel
-          for something that developers already are used to. To use this also makes it so that it can more easly be connected to 
-          my groups engine for future projects. The cards that first was added to the visual script was dialog box and criteria.
-          The dialog box is what holds what we see on the screen, text, speaker, speed, font, and anything else that has to do
-          with the actual written dialog. The criteria is, if wanted, what needs to be fulfilled to have the option of chosing 
-          the next dialog. **picture of early stage dialog tree**
-          <img src={earlyIteration} alt={earlyIteration.toString()} className="min-w-1/2" />
-        </p>
+        <div className="grid h-48 grid-cols-2 place-content-center gap-4">
+          <p className="min-w-2/4">
+            To work iterativly and early test is something that TGA is pushing and I have learned from previous experiences. 
+            So the first step was just to make a system that can print text in console wit the minimum scope of my project.
+            The minimum I had for the project was to have the ability to go through a dialog tree, with different speed on dialog and
+            if needed options to differnet branches in the dialog tree. A hard coded exemple of the class structure is used to test 
+            input, ease of building the tree and look of the dialog speed. ** Insert ealry gif of dialog tree, rightside**
+          </p>
+          <img src={dialogV1} alt={dialogV1.toString()} className="min-w-1/4" />
+          <p>
+            The early testing also made it so extra data that previously wasn't considered needed a place to be stored, like the speaker.
+            Once the structure was built and tested with how different dialog would connect it was time to connect it to something visual 
+            to easy the use of building the trees. This was made in a visual scripting tool as to save time and not reinventing the wheel
+            for something that developers already are used to. To use this also makes it so that it can more easly be connected to 
+            my groups engine for future projects. The cards that first was added to the visual script was dialog box and criteria.
+            The dialog box is what holds what we see on the screen, text, speaker, speed, font, and anything else that has to do
+            with the actual written dialog. The criteria is, if wanted, what needs to be fulfilled to have the option of chosing 
+            the next dialog. **picture of early stage dialog tree**
+            <img src={earlyIteration} alt={earlyIteration.toString()} className="min-w-1/4" />
+          </p>
+        </div>
 
         <p>
           Once trees could be made it was time to make possilbe to convert the data from the visual script down to the actual dialog tree.
@@ -62,8 +63,8 @@ export default function Specialisation() {
           that will give a lot of emotion to the speaker is different fonts. Adding that was a simple drop down from 
           ImGui with a list of given fonts. For even more personality for the speaker sound for either voiced dialog or just
           a repetable sound woth differnent pitch, similar to banjo kazooie voice linces. ** add final dialog box image**
-          <img src={dialogV2} alt={dialogV2.toString()} className="w-full h-auto mb-4" />
-          <img src={dialogV3} alt={dialogV3.toString()} className="w-full h-auto mb-4" />
+          <img src={dialogV2} alt={dialogV2.toString()} className="min-w-1/4" />
+          <img src={dialogV3} alt={dialogV3.toString()} className="min-w-1/4" />
         </p>
 
         <p>
@@ -73,7 +74,7 @@ export default function Specialisation() {
 
       <Section title="Make it Pretty" image={workingGIF}>
         <p>
-          <img src={dialogV4} alt={dialogV4.toString()} className="w-full h-auto mb-4" />
+          <img src={dialogV4} alt={dialogV4.toString()} className="min-w-1/4" />
           Improvments and wishlist for future building
         </p>
       </Section>
