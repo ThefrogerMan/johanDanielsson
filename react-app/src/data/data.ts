@@ -38,6 +38,7 @@ export type ProjectType = {
   myContributions: string;
   myContributionsDetails: string;
   coverImage: string;
+  length: string;
   trailerUrl?: string;
   images?: string[];
 };
@@ -48,52 +49,70 @@ export const projects: ProjectType[] = [
     name: "Early Bird",
     description: "You are a stressed seagull who overslept. Dodge, jump and dive through the hostile environment of Sweden. Collect berries to energize you on your journey to reunite with your flock.",
     myContributions: "Animations",
-    myContributionsDetails: "Pogchamp",
+    myContributionsDetails: "The first projct from the game assembly (TGA) where the biggest learning experience was learning unity." +
+    " While I was helping with a bunch of smaller aspects throughout the entire project, animation implementation was my largest part." +
+    " This helped me to more deeply understand how to connect the differnet system which made othar parts easier to make, like moving obstacles.",
     coverImage: earlyBird,
     trailerUrl: "https://www.youtube.com/watch?v=PM2JWWO9Rw8",
     images: [earlyBirdSS1,earlyBirdSS2,earlyBirdSS3,earlyBirdSS4],
+    length: "2 weeks",
   },
   {
     id: "test2",
     name: "Pawns Gambit",
-    description: "You’re a humble pawn sent forth by the King on a perilous journey. Battle foes & solve puzzles. Prove your worth and ascend as Queen!",
+    description: "You are a humble pawn sent forth by the King on a perilous journey. Battle foes & solve puzzles. Prove your worth and ascend as Queen!",
     myContributions: "UI, Sound",
-    myContributionsDetails: "Pogchamp",
+    myContributionsDetails: "The second project was also made using unity but for mobile. So taking care of UI became more of a testing a making sure it works for a multitude of asåects ratios." +
+    " I also managed the sound effects and putting in the music in the game which tought me how to understand other students code more to implement where and when sounds should play.",
     coverImage: pawnGambit,
     trailerUrl: "https://www.youtube.com/watch?v=RV0J4raLpqY&pp=0gcJCdYKAYcqIYzv",
     images: [pawnGambitSS1,pawnGambitSS2,pawnGambitSS3,pawnGambitSS4],
-    
+    length: "2 weeks",
   },
   {
     id: "test3",
     name: "Grim Fates Await",
-    description: "As a fallen angel, rush and dash your way through the sinful levels of hell, confronting your sins to determine your fate.",
+    description: "As a fallen angel, rush and dash your way through the sinful levels of hell, confronting your sins to determine your fate.",
     myContributions: "UI, Level Loading",
-    myContributionsDetails: "Pogchamp",
+    myContributionsDetails: "The third project was the first in TGA's own engine TGE. To make anything work in TGE was harder given the lack of online help." + 
+    " Unity was used as a level editor and then imported into TGE using TGA's level exporter which was built upon by the group. Translateing the data from unity " +
+    "into TGE was the biggest learning experience to understand how the game engines handle data to make games work.",
     coverImage: grimFate,
     trailerUrl: "https://www.youtube.com/watch?v=iTCwuRnwLcU",
     images: [grimFateSS1,grimFateSS2,grimFateSS3,grimFateSS4],
+    length: "6 weeks",
   },
   {
     id: "test4",
     name: "Game of Gnomes",
     description: "The gnomes have protected the garden for years but now a new threat invades their kingdom. Attack and dodge through the advancing squirrels to retake the garden!",
     myContributions: "Movement, Combat, Animations",
-    myContributionsDetails: "Pogchamp",
+    myContributionsDetails: "In the fourth project I have learned more about how we need to use TGE engine so I could from the start build deeper mechanics. " +
+    "Focusing on the core gameplay with movement and combat also made it so I could take a bigger on how the game should feel and look. " +
+    "The process was more iteratively made with trying to geet as many base features out as quickly as possible for the fellow group members to iterate on their work. " +
+    "These features could later be improved and refacored when more time was there and functionality was set in stone.",
     featured: true,
     coverImage: gameOfGnomes,
     trailerUrl: "https://www.youtube.com/watch?v=ZKy3h8cz20I",
     images: [gameOfGnomesSS1,gameOfGnomesSS2,gameOfGnomesSS3,gameOfGnomesSS4],
+    length: "4 weeks",
   },
   {
     id: "test5",
     name: "Spite: Oathbound",
     description: "As a shieldmaiden, slash and strike your way through your draugr-infested hometown, taking on the role of a valkyrie to save the World Tree.",
     myContributions: "Combat, Sound",
-    myContributionsDetails: "Pogchamp",
+    myContributionsDetails: "First part of the fifth was just for preproduction for 2 weeks and then later 5 weeks of production. During the first 2 weeks "+
+    "I mostly worked on getting in video and audio fetures to our groups engine. Part of it I also planned up a lot for the tools that would need to be added " +
+    "for the other groupmembers. This was done through looking back into the previous projects they have been apart of and seeing what was good and what could be "+
+    "improved. This made it easier for all the programmers in the group to build tools and have a understanding on what is needed for the tool user in question. " +
+    "During the actual game production I worked mostly on the player where I used a modular system to build the abilities so that enemies and the boss easily could "+
+    "use the same abilities with tweaked stats. Through this I gained a deeper understanding on tool making and the UX experinece needed for people to use what you actually "+
+    "make. Cause a slight hard tool to use might be worse than no tool at all. ",
     coverImage: spite,
     trailerUrl: "https://www.youtube.com/watch?v=6T9ucwCqhoA",
     images: [spiteSS1,spiteSS2,spiteSS3,spiteSS4],
+    length: "7 weeks",
   },
   {
     id: "test6",
@@ -101,7 +120,8 @@ export const projects: ProjectType[] = [
     featured: true,
     description: "As a wizard who has lost their power, climb and puzzle the way as you scour, beware suits of armor and do not cower, regain the magic and free your tower.",
     myContributions: "Movement, Gameplay Features",
-    myContributionsDetails: "Pogchamp",
+    myContributionsDetails: "I make charecter move around and stuff that is not player move around",
     coverImage: lilWiz,
+    length: "8 weeks",
   },
 ];
