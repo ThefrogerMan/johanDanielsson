@@ -8,7 +8,7 @@ import dialogV4 from "../assets/Spec/dialogBoxV4.png";
 
 export default function Specialisation() {
   return (
-    <div className="">
+    <div className="grid h-48 grid-cols-2 place-content-center gap-4">
       <h1 className="text-center my-12 mt-6 text-4xl">Specialisation: Dialog Tool</h1>
       <Section title="Background" image={workingGIF}>
         <p>
@@ -19,7 +19,6 @@ export default function Specialisation() {
         </p>
       </Section>
       <Section title="Make it work">
-        <div className="grid h-48 grid-cols-2 place-content-center gap-4">
           <p className="min-w-2/4">
             To work iterativly and early test is something that TGA is pushing and I have learned from previous experiences. 
             So the first step was just to make a system that can print text in console wit the minimum scope of my project.
@@ -28,7 +27,7 @@ export default function Specialisation() {
             input, ease of building the tree and look of the dialog speed. ** Insert ealry gif of dialog tree, rightside**
           </p>
           <img src={dialogV1} alt={dialogV1.toString()} className="min-w-1/4" />
-          <p>
+          <p className="min-w-2/4">
             The early testing also made it so extra data that previously wasn't considered needed a place to be stored, like the speaker.
             Once the structure was built and tested with how different dialog would connect it was time to connect it to something visual 
             to easy the use of building the trees. This was made in a visual scripting tool as to save time and not reinventing the wheel
@@ -36,11 +35,9 @@ export default function Specialisation() {
             my groups engine for future projects. The cards that first was added to the visual script was dialog box and criteria.
             The dialog box is what holds what we see on the screen, text, speaker, speed, font, and anything else that has to do
             with the actual written dialog. The criteria is, if wanted, what needs to be fulfilled to have the option of chosing 
-            the next dialog. **picture of early stage dialog tree**
-            <img src={earlyIteration} alt={earlyIteration.toString()} className="min-w-1/4" />
+            the next dialog. **picture of early stage dialog tree*
           </p>
-        </div>
-
+          <img src={earlyIteration} alt={earlyIteration.toString()} className="min-w-1/4" />
         <p>
           Once trees could be made it was time to make possilbe to convert the data from the visual script down to the actual dialog tree.
           This was made through nlohmann JSON reader. This made it so some more data needed not only a increasing ID counter for connecting dialog but 
@@ -50,7 +47,7 @@ export default function Specialisation() {
       </Section>
         
       <Section title="Make it Right" image={screenIteration}>
-        <p>
+        <p className="min-w-1/2">
           After the bare minimum of the project was done, visually connect dialog and make it easy to update. It is time to make 
           it something that is actually can be used in projects. First thing make it possible to see on screen. 
           Simply getting the text to appear on screen was not to hard but getting it to look good brings out 
@@ -63,18 +60,19 @@ export default function Specialisation() {
           that will give a lot of emotion to the speaker is different fonts. Adding that was a simple drop down from 
           ImGui with a list of given fonts. For even more personality for the speaker sound for either voiced dialog or just
           a repetable sound woth differnent pitch, similar to banjo kazooie voice linces. ** add final dialog box image**
+          
+        </p>
           <img src={dialogV2} alt={dialogV2.toString()} className="min-w-1/4" />
           <img src={dialogV3} alt={dialogV3.toString()} className="min-w-1/4" />
-        </p>
-
         <p>
           Write about dialog tree connections and conditional dialog trees and ranodm what comes next
         </p>
       </Section>
 
       <Section title="Make it Pretty" image={workingGIF}>
-        <p>
-          <img src={dialogV4} alt={dialogV4.toString()} className="min-w-1/4" />
+        
+        <img src={dialogV4} alt={dialogV4.toString()} className="min-w-1/4" />
+        <p className="min-w-2/4">
           Improvments and wishlist for future building
         </p>
       </Section>
