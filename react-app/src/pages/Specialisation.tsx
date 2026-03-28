@@ -1,4 +1,11 @@
 import earlyBird from "../assets/early-bird.png";
+import earlyIteration from "../assets/Spec/first iteration.gif";
+import screenIteration from "../assets/Spec/talkingGif.gif";
+import workingGIF from "../assets/Spec/Slow type.gif";
+import dialogV1 from "../assets/Spec/dialogBoxV1.png";
+import dialogV2 from "../assets/Spec/dialogBoxV2.png";
+import dialogV3 from "../assets/Spec/dialogBoxV3.png";
+import dialogV4 from "../assets/Spec/dialogBoxV4.png";
 
 export default function Specialisation() {
   return (
@@ -12,13 +19,14 @@ export default function Specialisation() {
           can make it easier and iterate to make the best game possible is important
         </p>
       </Section>
-      <Section title="Make it work" image={earlyBird}>
+      <Section title="Make it work" image={earlyIteration}>
         <p>
+          <img src={dialogV1} alt={dialogV1.toString()} className="w-full h-auto mb-4" />
           To work iterativly and early test is something that TGA is pushing and I have learned from previous experiences. 
           So the first step was just to make a system that can print text in console wit the minimum scope of my project.
           The minimum I had for the project was to have the ability to go through a dialog tree, with different speed on dialog and
           if needed options to differnet branches in the dialog tree. A hard coded exemple of the class structure is used to test 
-          input, ease of building the tree and look of the dialog speed. ** Insert ealry gif of dialog tree**
+          input, ease of building the tree and look of the dialog speed. ** Insert ealry gif of dialog tree, rightside**
         </p>
 
         <p>
@@ -40,7 +48,7 @@ export default function Specialisation() {
         </p>
       </Section>
         
-      <Section title="Make it Right" image={earlyBird}>
+      <Section title="Make it Right" image={screenIteration}>
         <p>
           After the bare minimum of the project was done, visually connect dialog and make it easy to update. It is time to make 
           it something that is actually can be used in projects. First thing make it possible to see on screen. 
@@ -54,6 +62,8 @@ export default function Specialisation() {
           that will give a lot of emotion to the speaker is different fonts. Adding that was a simple drop down from 
           ImGui with a list of given fonts. For even more personality for the speaker sound for either voiced dialog or just
           a repetable sound woth differnent pitch, similar to banjo kazooie voice linces. ** add final dialog box image**
+          <img src={dialogV2} alt={dialogV2.toString()} className="w-full h-auto mb-4" />
+          <img src={dialogV3} alt={dialogV3.toString()} className="w-full h-auto mb-4" />
         </p>
 
         <p>
@@ -61,8 +71,9 @@ export default function Specialisation() {
         </p>
       </Section>
 
-      <Section title="Make it Pretty" image={earlyBird}>
+      <Section title="Make it Pretty" image={workingGIF}>
         <p>
+          <img src={dialogV4} alt={dialogV4.toString()} className="w-full h-auto mb-4" />
           Improvments and wishlist for future building
         </p>
       </Section>
