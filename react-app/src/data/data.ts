@@ -65,6 +65,7 @@ export const projects: ProjectType[] = [
     myContributionsDetails: "The second project was also made using unity but for mobile. So taking care of UI became more of a testing a making sure it works for a multitude of asåects ratios." +
     " I also managed the sound effects and putting in the music in the game which tought me how to understand other students code more to implement where and when sounds should play.",
     coverImage: pawnGambit,
+    featured: true,
     trailerUrl: "https://www.youtube.com/watch?v=RV0J4raLpqY&pp=0gcJCdYKAYcqIYzv",
     images: [pawnGambitSS1,pawnGambitSS2,pawnGambitSS3,pawnGambitSS4],
     length: "2 weeks",
@@ -78,7 +79,6 @@ export const projects: ProjectType[] = [
     " Unity was used as a level editor and then imported into TGE using TGA's level exporter which was built upon by the group. Translateing the data from unity " +
     "into TGE was the biggest learning experience to understand how the game engines handle data to make games work.",
     coverImage: grimFate,
-    featured: true,
     trailerUrl: "https://www.youtube.com/watch?v=iTCwuRnwLcU",
     images: [grimFateSS1,grimFateSS2,grimFateSS3,grimFateSS4],
     length: "6 weeks",

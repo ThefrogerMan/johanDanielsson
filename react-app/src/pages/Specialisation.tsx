@@ -1,4 +1,3 @@
-import earlyBird from "../assets/early-bird.png";
 import earlyIteration from "../assets/Spec/first iteration.gif";
 import screenIteration from "../assets/Spec/talkingGif.gif";
 import workingGIF from "../assets/Spec/Slow type.gif";
@@ -11,7 +10,7 @@ export default function Specialisation() {
   return (
     <div className="">
       <h1 className="text-center my-12 mt-6 text-4xl">Specialisation: Dialog Tool</h1>
-      <Section title="Background" image={earlyBird}>
+      <Section title="Background" image={workingGIF}>
         <p>
           The insperation to make a dialog tool came from Supermassive's Hades II where the dialog changes depening on progress in story, relation to character,
           and what has happend in the previous story. The idea of writing all that dialog and connecting them seems like something that a clean and
@@ -19,7 +18,7 @@ export default function Specialisation() {
           can make it easier and iterate to make the best game possible is important
         </p>
       </Section>
-      <Section title="Make it work" image={earlyIteration}>
+      <Section title="Make it work">
         <p>
           <img src={dialogV1} alt={dialogV1.toString()} className="w-full h-auto mb-4" />
           To work iterativly and early test is something that TGA is pushing and I have learned from previous experiences. 
@@ -38,6 +37,7 @@ export default function Specialisation() {
           The dialog box is what holds what we see on the screen, text, speaker, speed, font, and anything else that has to do
           with the actual written dialog. The criteria is, if wanted, what needs to be fulfilled to have the option of chosing 
           the next dialog. **picture of early stage dialog tree**
+          <img src={earlyIteration} alt={earlyIteration.toString()} className="min-w-1/2" />
         </p>
 
         <p>
