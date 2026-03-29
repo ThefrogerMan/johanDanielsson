@@ -1,18 +1,19 @@
 export default function Hero() {
   return (
-    <div className="text-contrast-light text-2xl">
-      {" "}
+    <div className="text-white text-2xl font-light">
       Hello my name is
-      <span className="text-4xl text-white md:whitespace-nowrap">
-        {" "}
-        Johan Danielsson
-      </span>{" "}
-      and I'm a
-      <span className="text-4xl text-white md:whitespace-nowrap">
-        {" "}
-        Tools and Gameplay Programmer
-      </span>
-      .
+      <Hightlight> Johan Danielsson </Hightlight>
+      and I'm a<Hightlight> Tools </Hightlight>
+      and
+      <Hightlight> Gameplay Programmer</Hightlight>.
     </div>
+  );
+}
+
+function Hightlight({ children }: { children: React.ReactNode }) {
+  return (
+    <span className=" font-semibold text-contrast-light md:whitespace-nowrap">
+      {children}
+    </span>
   );
 }

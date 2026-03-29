@@ -12,7 +12,7 @@ export default function Main() {
       <Hero />
       <Link
         to="/specialisation"
-        className="block text-left bg-white group text-black! mt-8 p-4 text-lg font-medium hover:underline"
+        className="block text-left bg-white group text-black!  p-4 text-lg font-medium hover:underline"
       >
         Learn more about my specialisation
         <div className="flex gap-4 items-center">
