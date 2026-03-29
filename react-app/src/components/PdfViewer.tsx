@@ -18,20 +18,21 @@ export default function PdfViewer({ fileUrl }: PdfViewerProps) {
   };
 
   return (
-    <div className="bg-transparent flex flex-col justify-center items-center gap-4">
-      <Document
-        file={fileUrl}
-        loading={<div>Loading PDF...</div>}
-        error={<div>Failed to load PDF file.</div>}
-      >
-        <Page pageNumber={1} />
-      </Document>
-      <button
-        onClick={handleDownload}
-        className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-      >
-        Ladda ner CV
-      </button>
+    <div className="bg-transparent flex flex-col justify-center items-center gap-4 w-full ">
+      <div className="w-full max-w-4xl flex justify-center items-center ">
+        <Document
+          file={fileUrl}
+          loading={<div>Loading PDF...</div>}
+          error={<div>Failed to load PDF file.</div>}
+        >
+          <Page
+            pageNumber={1}
+            width={Math.min(window.innerWidth - 32, 896)}
+            className="mx-auto"
+          />
+        </Document>
+      </div>
+      <button onClick={handleDownload}>Ladda ner CV</button>
     </div>
   );
 }
