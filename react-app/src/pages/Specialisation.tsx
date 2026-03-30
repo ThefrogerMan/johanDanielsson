@@ -16,7 +16,7 @@ export default function Specialisation() {
       <h1 className="text-center my-12 mt-6 text-4xl">Specialisation: Dialog Tool</h1>
       <Section title="Background" image={workingGIF}>
         <p>
-          The inspiration to make a dialog tool came from Supermassive's Hades II where the dialog changes depending on progress in story, relation to character,
+          The inspiration to make a dialog tool came from Supergiant's Hades II where the dialog changes depending on progress in story, relation to character,
           and what has happened in the previous story. The idea of writing all that dialog and connecting them seems like something that a clean and
           user-friendly tool is necessary. Dialog is also something that is often pushed to the side in game development so having something that
           can make it easier and iterate to make the best game possible is important.
