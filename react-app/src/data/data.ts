@@ -39,6 +39,7 @@ export type ProjectType = {
   myContributionsDetails: string;
   coverImage: string;
   length: string;
+  teamSize: string;
   trailerUrl?: string;
   images?: string[];
 };
@@ -56,6 +57,7 @@ export const projects: ProjectType[] = [
     trailerUrl: "https://www.youtube.com/watch?v=PM2JWWO9Rw8",
     images: [earlyBirdSS1,earlyBirdSS2,earlyBirdSS3,earlyBirdSS4],
     length: "2 weeks",
+    teamSize: "13",
   },
   {
     id: "test2",
@@ -69,6 +71,7 @@ export const projects: ProjectType[] = [
     trailerUrl: "https://www.youtube.com/watch?v=RV0J4raLpqY&pp=0gcJCdYKAYcqIYzv",
     images: [pawnGambitSS1,pawnGambitSS2,pawnGambitSS3,pawnGambitSS4],
     length: "2 weeks",
+    teamSize: "14",
   },
   {
     id: "test3",
@@ -82,6 +85,7 @@ export const projects: ProjectType[] = [
     trailerUrl: "https://www.youtube.com/watch?v=iTCwuRnwLcU",
     images: [grimFateSS1,grimFateSS2,grimFateSS3,grimFateSS4],
     length: "6 weeks",
+    teamSize: "13",
   },
   {
     id: "test4",
@@ -96,7 +100,8 @@ export const projects: ProjectType[] = [
     coverImage: gameOfGnomes,
     trailerUrl: "https://www.youtube.com/watch?v=ZKy3h8cz20I",
     images: [gameOfGnomesSS1,gameOfGnomesSS2,gameOfGnomesSS3,gameOfGnomesSS4],
-    length: "4 weeks",
+    length: "4 weeks",    
+    teamSize: "13",
   },
   {
     id: "test5",
@@ -114,15 +119,22 @@ export const projects: ProjectType[] = [
     trailerUrl: "https://www.youtube.com/watch?v=6T9ucwCqhoA",
     images: [spiteSS1,spiteSS2,spiteSS3,spiteSS4],
     length: "7 weeks",
+    teamSize: "19",
   },
   {
     id: "test6",
     name: "Merle: The Incompetent Wizard",
     featured: true,
     description: "As a wizard who has lost their power, climb and puzzle the way as you scour, beware suits of armor and do not cower, regain the magic and free your tower.",
-    myContributions: "Movement, Gameplay Features",
-    myContributionsDetails: "I make charecter move around and stuff that is not player move around",
+    myContributions: "Movement, Gameplay Features, Project Management",
+    myContributionsDetails: "During the production and planing of Merle I took a bigger part of planing the core features and references for the game. Given that we had " +
+      "A Hat In Time as a refence game I gathered images and GIFs from the game to make it easier for everyone to have the same vision of the game we were making. " +
+      "With this preperation we could go into the beginning of the game development process quicker and have the option of more iterations. " +
+      "During the main project I also took a bigger part of leading sprint planings and holding the stand ups. During the main coding part of the project "+
+      "I was partly responsible for making most of the gameplay features like moving platforms, spring, buttons, particle activations and making it possible to use it through unreal. " +
+      "The deeper movement mechanics like dash, wall jump, ledge grab, fireball and health system I was also a part of developing.",
     coverImage: lilWiz,
     length: "8 weeks",
+    teamSize: "18",
   },
 ];
