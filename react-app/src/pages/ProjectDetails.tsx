@@ -22,12 +22,14 @@ function getYoutubeThumbnailUrl(url: string): string {
   return "";
 }
 
+type Media = "video" | number;
+
 export default function ProjectDetails() {
   const { projectId } = useParams();
-
-  const [selectedMedia, setSelectedMedia] = useState<"video" | number>("video");
-
   const project = projects.find((project) => project.id === projectId);
+  const defaultMedia: Media = project?.trailerUrl ? "video" : 0;
+
+  const [selectedMedia, setSelectedMedia] = useState<Media>(defaultMedia);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -88,14 +90,26 @@ export default function ProjectDetails() {
       </div>
 
       <div className="space-y-4">
+        <div className="text-sm">
+          <div>
+            Peoject length:{" "}
+            <span className="font-semibold">{project.length}</span>
+          </div>
+          <div>
+            Team size: <span className="font-semibold">{project.teamSize}</span>
+          </div>
+        </div>
         <div>
           <h2 className="text-xl font-semibold mb-2">Description</h2>
           <p>{project.description}</p>
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold mb-2">My Contributions</h2>
-          <p>{project.myContributions}</p>
+          <h2 className="text-xl font-semibold">My Contributions</h2>
+          <p className="font-extralight text-sm my-0!">
+            {project.myContributions}
+          </p>
+          <p className="">{project.myContributionsDetails}</p>
         </div>
       </div>
     </div>
