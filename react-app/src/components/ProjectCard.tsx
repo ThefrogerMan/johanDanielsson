@@ -5,7 +5,7 @@ export default function ProjectCard(props: ProjectType) {
   return (
     <Link
       to={"/projects/" + props.id}
-      className="relative aspect-video text-white group overflow-hidden block font-bold! duration-300 rounded-2xl scale-100 hover:scale-103 hover:shadow transition-transform"
+      className="relative border-2 border-transparent hover:border-white aspect-video text-white group overflow-hidden block font-bold! duration-300 rounded-2xl scale-100 hover:scale-103 hover:shadow transition-all"
     >
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -26,7 +26,7 @@ export default function ProjectCard(props: ProjectType) {
       <div
         className="absolute text-white inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 duration-300 transition-opacity flex flex-col-reverse p-6"
         style={{
-          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), transparent)`,
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3))`,
         }}
       >
         <p className="m-0! font-normal ">{props.description}</p>
