@@ -4,6 +4,7 @@ import "./index.css";
 import Main from "./pages/Main.tsx";
 import { BrowserRouter, Route, Routes } from "react-router";
 import Layout from "./layouts/Layout.tsx";
+import ScrollToTop from "./components/ScrollToTop";
 import ProjectDetails from "./pages/ProjectDetails.tsx";
 import Resume from "./pages/Resume.tsx";
 import Projects from "./pages/Projects.tsx";
@@ -12,6 +13,7 @@ import Specialisation from "./pages/Specialisation.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Main />} />

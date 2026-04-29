@@ -1,6 +1,7 @@
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { projects } from "../data/data";
 import { useState } from "react";
+import RightArrow from "../icons/RightArrow";
 
 function getYouTubeEmbedUrl(url: string): string {
   const videoIdMatch = url.match(
@@ -27,6 +28,7 @@ type Media = "video" | number;
 export default function ProjectDetails() {
   const { projectId } = useParams();
   const project = projects.find((project) => project.id === projectId);
+  const navigate = useNavigate();
   const defaultMedia: Media = project?.trailerUrl ? "video" : 0;
 
   const [selectedMedia, setSelectedMedia] = useState<Media>(defaultMedia);
@@ -43,6 +45,16 @@ export default function ProjectDetails() {
 
   return (
     <div className="max-w-4xl mx-auto">
+      <button
+        type="button"
+        onClick={() => navigate(-1)}
+        className="bg-transparent! p-0! flex items-center gap-2 mb-4 text-sm text-contrast-white hover:text-contrast-light hover:border-0! border-0!"
+      >
+        <div className="rotate-180">
+          <RightArrow height={24} width={24} />
+        </div>
+        <div>Back to projects</div>
+      </button>
       <h1 className="text-3xl font-bold mb-4">{project.name}</h1>
 
       {/* Main Media Display */}
@@ -92,7 +104,7 @@ export default function ProjectDetails() {
       <div className="space-y-4">
         <div className="text-sm">
           <div>
-            Peoject length:{" "}
+            Project length:{" "}
             <span className="font-semibold">{project.length}</span>
           </div>
           <div>
